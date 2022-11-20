@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>爱心</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+    }
+    .heart {
+      width: 200px;
+      height: 200px;
+      margin: 150px auto;
+      animation: beat 1s linear infinite alternate;
+    }
+    @keyframes beat {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+    .left,
+    .right {
+      float: left;
+      width: 100px;
+      height: 160px;
+      background-color: #c0392b;
+      border-radius: 50px 50px 0 0;
+      box-shadow: 0 0 3px 0 #c0392b;
+    }
+    .left {
+      transform: translateX(29px) rotate(-45deg);
+    }
+    .right {
+      transform: translateX(-29px) rotate(45deg);
+    }
+  </style>
+  <body>
+    <a href="shuidi.html"
+      ><div class="heart">
+        <div class="left"></div>
+        <div class="right"></div></div
+    ></a>
+  </body>
+</html>
